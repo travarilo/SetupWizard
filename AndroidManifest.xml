@@ -86,7 +86,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:theme="@style/NoDisplay">
 
@@ -103,7 +102,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
@@ -116,7 +114,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_WELCOME" />
@@ -129,7 +126,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_LOCALE" />
@@ -142,7 +138,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_DATETIME" />
@@ -207,7 +202,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_RECOVERY_UPDATE"/>
@@ -219,7 +213,6 @@
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.DEVICE_SPECIFIC"/>
@@ -232,7 +225,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETTINGS" />
@@ -284,7 +276,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP"/>
@@ -297,7 +288,6 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE" />
@@ -309,7 +299,6 @@
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:excludeFromRecents="true"
                   android:immersive="true"
-                  android:exported="false"
                   android:label="@@string/activity_label_empty"
                   android:theme="@style/NoDisplay">
             <intent-filter>
@@ -326,8 +315,7 @@
                   android:launchMode="singleInstance"
                   android:theme="@style/NoDisplay"/>
 
-        <receiver android:name=".PartnerReceiver"
-                  android:exported="true">
+        <receiver android:name=".PartnerReceiver">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
                 <action android:name="com.google.android.tvsetup.action.PARTNER_CUSTOMIZATION" />
