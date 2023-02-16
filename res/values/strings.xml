@@ -107,5 +107,4 @@
     <string name="gesture_navigation">Gesture navigation</string>
     <string name="two_button_navigation">2-button navigation</string>
     <string name="navbar_navigation">3-button navigation</string>
-    <string name="hide_gesture_hint">Hide gestural navigation hint</string>
 </resources>
